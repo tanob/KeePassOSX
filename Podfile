@@ -1,6 +1,6 @@
 platform :osx, '10.10'
 
-pod 'KeePassKit', :path => '../KeePassKit'
+pod 'KeePassKit', :git => 'https://github.com/tanob/KeePassKit.git'
 
 target 'KeePassOSXTests' do
 

@@ -4,14 +4,19 @@ PODS:
   - KissXML (5.0)
 
 DEPENDENCIES:
-  - KeePassKit (from `../KeePassKit`)
+  - KeePassKit (from `https://github.com/tanob/KeePassKit.git`)
 
 EXTERNAL SOURCES:
   KeePassKit:
-    :path: ../KeePassKit
+    :git: https://github.com/tanob/KeePassKit.git
+
+CHECKOUT OPTIONS:
+  KeePassKit:
+    :commit: 99e7a8f9fa7d976e00f8385580454d795db69903
+    :git: https://github.com/tanob/KeePassKit.git
 
 SPEC CHECKSUMS:
-  KeePassKit: c6881ead90f3c5cde3ab4ee31763d55f65c29c08
+  KeePassKit: f662a8e53ce060360cbf8679424a949731e60319
   KissXML: e537c38b18ede903ee6de45953a9bd86c131ebe9
 
 COCOAPODS: 0.36.0.beta.2
