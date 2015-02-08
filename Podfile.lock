@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../KeePassKit
 
 SPEC CHECKSUMS:
-  KeePassKit: 003e2d00d478a4b43e605940ec4dba42185793b1
+  KeePassKit: c6881ead90f3c5cde3ab4ee31763d55f65c29c08
   KissXML: e537c38b18ede903ee6de45953a9bd86c131ebe9
 
 COCOAPODS: 0.36.0.beta.2
