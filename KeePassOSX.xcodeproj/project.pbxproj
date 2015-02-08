@@ -29,6 +29,7 @@
 			<array>
 				<string>BB05D65F0694470D7376637B</string>
 				<string>0AACE5F5067D87D8EFE8265D</string>
+				<string>F50BA339C2F73785620B1407</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -38,6 +39,36 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>13A67AE9EDBD879D8C404BAB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>16F6A7F946BC5C14CD3CE8A9</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -104,11 +135,28 @@ fi
 				<string>EF05BE2A352C60C3389C2C2D</string>
 				<string>C455B83031D16144C301C725</string>
 				<string>394CCC12CAB658D9F446BED0</string>
+				<string>5B2752239EB4BB8E9D3BC3B3</string>
+				<string>EA5B521C1CD39A8015D35F4E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5B2752239EB4BB8E9D3BC3B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-KeePassOSXTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-KeePassOSXTests/Pods-KeePassOSXTests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -135,6 +183,20 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>B1575D41E7C9DF224F4985C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F50BA339C2F73785620B1407</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
 		</dict>
 		<key>B935F54D1A7E98080093FF7B</key>
 		<dict>
@@ -523,6 +585,7 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>B98AAF131A87BADD00FF72A6</string>
 				<string>B94C73181A7D97D50038712D</string>
 			</array>
 			<key>isa</key>
@@ -535,7 +598,9 @@ fi
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array/>
+			<array>
+				<string>B1575D41E7C9DF224F4985C8</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -558,9 +623,12 @@ fi
 			<string>B94C731E1A7D97D50038712D</string>
 			<key>buildPhases</key>
 			<array>
+				<string>16F6A7F946BC5C14CD3CE8A9</string>
 				<string>B94C730D1A7D97D50038712D</string>
 				<string>B94C730E1A7D97D50038712D</string>
 				<string>B94C730F1A7D97D50038712D</string>
+				<string>EEF5F1916C4CCB740153B98B</string>
+				<string>DD2AD26461AB6FCADF8A3A0C</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -620,6 +688,7 @@ fi
 			<array>
 				<string>B94C73171A7D97D50038712D</string>
 				<string>B94C73151A7D97D50038712D</string>
+				<string>B98AAF121A87BADD00FF72A6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -895,6 +964,8 @@ fi
 		</dict>
 		<key>B94C731F1A7D97D50038712D</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5B2752239EB4BB8E9D3BC3B3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -927,6 +998,8 @@ fi
 		</dict>
 		<key>B94C73201A7D97D50038712D</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EA5B521C1CD39A8015D35F4E</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -962,6 +1035,26 @@ fi
 			<string>KeePassOSX-Bridging-Header.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B98AAF121A87BADD00FF72A6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EntriesViewControllerSpec.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B98AAF131A87BADD00FF72A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B98AAF121A87BADD00FF72A6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>B9B828061A7FD24000F6DAAF</key>
 		<dict>
@@ -1086,6 +1179,69 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DD2AD26461AB6FCADF8A3A0C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-KeePassOSXTests/Pods-KeePassOSXTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EA5B521C1CD39A8015D35F4E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-KeePassOSXTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-KeePassOSXTests/Pods-KeePassOSXTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EEF5F1916C4CCB740153B98B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-KeePassOSXTests/Pods-KeePassOSXTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
 		<key>EF05BE2A352C60C3389C2C2D</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1100,6 +1256,19 @@ fi
 			<string>Pods/Target Support Files/Pods-KeePassOSX/Pods-KeePassOSX.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F50BA339C2F73785620B1407</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_KeePassOSXTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
