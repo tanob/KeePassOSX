@@ -18,9 +18,6 @@ EXTERNAL SOURCES:
     :tag: v0.3.0
 
 CHECKOUT OPTIONS:
-  KeePassKit:
-    :commit: 99e7a8f9fa7d976e00f8385580454d795db69903
-    :git: https://github.com/tanob/KeePassKit.git
   Quick:
     :git: https://github.com/Quick/Quick.git
     :tag: v0.3.0
