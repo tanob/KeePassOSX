@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class EntriesViewController: NSViewController {
+public class EntriesViewController: NSViewController {
 
     let entriesDataSource = EntriesDataSource()
 
@@ -22,7 +22,7 @@ class EntriesViewController: NSViewController {
         }
     }
 
-    override func viewWillAppear() {
+    override public func viewWillAppear() {
         entriesTableView.setDataSource(entriesDataSource)
     }
 }
