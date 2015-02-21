@@ -18,7 +18,7 @@ class Document: NSDocument {
         super.makeWindowControllers()
 
         let storyboard = NSStoryboard(name: "Main", bundle: nil)!
-        let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as DocumentWindowController
+        let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as! DocumentWindowController
 
         addWindowController(windowController)
     }

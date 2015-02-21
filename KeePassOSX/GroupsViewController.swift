@@ -18,9 +18,9 @@ class GroupsViewController: NSViewController, NSOutlineViewDelegate {
     @IBOutlet weak var groupHierarchyView: NSOutlineView!
 
     override func viewWillAppear() {
-        let keePassTree: KPKTree = parentViewController?.representedObject as KPKTree
+        let keePassTree: KPKTree = parentViewController?.representedObject as! KPKTree
         let root: KPKGroup = keePassTree.root
-        let allGroups: [KPKGroup] = keePassTree.allGroups as [KPKGroup]
+        let allGroups: [KPKGroup] = keePassTree.allGroups as! [KPKGroup]
 
         dataSource = GroupHierarchyDataSource(root: root, groups: allGroups)
 
@@ -31,7 +31,7 @@ class GroupsViewController: NSViewController, NSOutlineViewDelegate {
         var selectedGroup = emptyGroup
 
         if groupHierarchyView.selectedRow > -1 {
-            selectedGroup = groupHierarchyView.itemAtRow(groupHierarchyView.selectedRow) as KPKGroup
+            selectedGroup = groupHierarchyView.itemAtRow(groupHierarchyView.selectedRow) as! KPKGroup
         }
 
         println("\n Group selected \(selectedGroup)")

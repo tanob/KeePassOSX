@@ -19,17 +19,17 @@ class GroupHierarchyDataSource: NSObject, NSOutlineViewDataSource {
     }
 
     func outlineView(outlineView: NSOutlineView, numberOfChildrenOfItem item: AnyObject?) -> Int {
-        let result = item == nil ? 1 : (item as KPKGroup).groups.count
+        let result = item == nil ? 1 : (item as! KPKGroup).groups.count
 
         return result
     }
 
     func outlineView(outlineView: NSOutlineView, child index: Int, ofItem item: AnyObject?) -> AnyObject {
-        return item == nil ? root : (item as KPKGroup).groups[index]
+        return item == nil ? root : (item as! KPKGroup).groups[index]
     }
 
     func outlineView(outlineView: NSOutlineView, isItemExpandable item: AnyObject) -> Bool {
-        return (item as KPKGroup).groups.count > 0
+        return (item as! KPKGroup).groups.count > 0
     }
 
     func outlineView(outlineView: NSOutlineView, objectValueForTableColumn tableColumn: NSTableColumn?, byItem item: AnyObject?) -> AnyObject? {
