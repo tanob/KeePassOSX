@@ -8,6 +8,7 @@
 
 import Foundation
 import Cocoa
+import KeePassKit
 
 class GroupHierarchyDataSource: NSObject, NSOutlineViewDataSource {
     let groups: [KPKGroup]

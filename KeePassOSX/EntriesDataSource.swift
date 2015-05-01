@@ -8,6 +8,7 @@
 
 import Foundation
 import Cocoa
+import KeePassKit
 
 class EntriesDataSource: NSObject, NSTableViewDataSource {
     var entries: [KPKEntry] = []

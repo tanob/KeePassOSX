@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Cocoa
+import KeePassKit
 
 class UnlockDatabaseViewController: NSViewController {
 

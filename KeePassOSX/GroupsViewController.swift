@@ -8,6 +8,7 @@
 
 import Foundation
 import Cocoa
+import KeePassKit
 
 class GroupsViewController: NSViewController, NSOutlineViewDelegate {
     let emptyGroup = KPKGroup()

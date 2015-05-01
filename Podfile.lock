@@ -2,30 +2,25 @@ PODS:
   - KeePassKit (0.0.1):
     - KissXML (~> 5.0)
   - KissXML (5.0)
-  - Nimble (0.4.0)
-  - Quick (0.2.2)
+  - Nimble (0.4.2)
+  - Quick (0.3.1)
 
 DEPENDENCIES:
   - KeePassKit (from `../KeePassKit`)
+  - KissXML (from `../KissXML`)
   - Nimble
-  - Quick (from `https://github.com/Quick/Quick.git`, tag `v0.3.0`)
+  - Quick
 
 EXTERNAL SOURCES:
   KeePassKit:
-    :path: ../KeePassKit
-  Quick:
-    :git: https://github.com/Quick/Quick.git
-    :tag: v0.3.0
-
-CHECKOUT OPTIONS:
-  Quick:
-    :git: https://github.com/Quick/Quick.git
-    :tag: v0.3.0
+    :path: "../KeePassKit"
+  KissXML:
+    :path: "../KissXML"
 
 SPEC CHECKSUMS:
   KeePassKit: f662a8e53ce060360cbf8679424a949731e60319
-  KissXML: e537c38b18ede903ee6de45953a9bd86c131ebe9
-  Nimble: 9c3e917791790aa54ca6bebcc022a282d3d5eb39
-  Quick: 1bda8b4c8d43f6b4dd69ca001918b1767b3c9c93
+  KissXML: 1c48397f8ab5c6d12a8aaa8cf4ecba0fac7adc3f
+  Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
+  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
 
-COCOAPODS: 0.36.0.beta.2
+COCOAPODS: 0.36.4
