@@ -1,0 +1,4 @@
+module CommonCryptoModule {
+umbrella "$DEVELOPER_ROOT/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/CommonCrypto/"
+export *
+}

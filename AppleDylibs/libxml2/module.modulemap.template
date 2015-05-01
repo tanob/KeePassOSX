@@ -1,0 +1,4 @@
+module libxmlModule {
+umbrella "$DEVELOPER_ROOT/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2/"
+export *
+}
