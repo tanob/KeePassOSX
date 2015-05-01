@@ -6,16 +6,24 @@ PODS:
   - Quick (0.3.1)
 
 DEPENDENCIES:
-  - KeePassKit (from `../KeePassKit`)
-  - KissXML (from `../KissXML`)
+  - KeePassKit (from `https://github.com/tanob/KeePassKit.git`)
+  - KissXML (from `https://github.com/tanob/KissXML.git`)
   - Nimble
   - Quick
 
 EXTERNAL SOURCES:
   KeePassKit:
-    :path: "../KeePassKit"
+    :git: https://github.com/tanob/KeePassKit.git
   KissXML:
-    :path: "../KissXML"
+    :git: https://github.com/tanob/KissXML.git
+
+CHECKOUT OPTIONS:
+  KeePassKit:
+    :commit: 8393c4cdbde53ff926e0345039d9a93d04f8bfb5
+    :git: https://github.com/tanob/KeePassKit.git
+  KissXML:
+    :commit: 992796bcd3456d431b0bde2e1d7809a39659a8dd
+    :git: https://github.com/tanob/KissXML.git
 
 SPEC CHECKSUMS:
   KeePassKit: f662a8e53ce060360cbf8679424a949731e60319
