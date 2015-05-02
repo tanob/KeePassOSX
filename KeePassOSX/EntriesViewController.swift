@@ -14,9 +14,9 @@ public class EntriesViewController: NSViewController {
 
     let entriesDataSource = EntriesDataSource()
 
-    @IBOutlet weak var entriesTableView: NSTableView!
+    @IBOutlet public weak var entriesTableView: NSTableView!
 
-    var entries: [KPKEntry] = [] {
+    public var entries: [KPKEntry] = [] {
         didSet {
             entriesDataSource.entries = entries
             entriesTableView.reloadData()
